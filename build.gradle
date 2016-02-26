@@ -1,0 +1,17 @@
+apply plugin: 'scala'
+apply plugin: 'application'
+
+ext {
+
+    scalaVersion = '2.11.7'
+}
+
+repositories {
+
+    mavenCentral()
+}
+
+dependencies {
+
+    compile("org.scala-lang:scala-library:${scalaVersion}")
+}
